@@ -17,7 +17,7 @@
                 ); ?>
                 <?php wp_nav_menu($args); ?>
             </nav>
-            
+            <?php get_search_form(); ?>
         </header>
     
     
