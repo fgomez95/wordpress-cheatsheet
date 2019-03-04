@@ -1,10 +1,13 @@
 /*
-    Theme Name: learning
+    Theme Name: Learning
     Author: Fernando Gomez
     Author URI: github.com/fgomez95
     Version: 1.0
 */
 
-html{
- background-color: white;   
+.site-header{
+    border: solid black 1px;
 }
+
+/* header navigation */
+
