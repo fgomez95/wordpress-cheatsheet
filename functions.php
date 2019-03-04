@@ -36,4 +36,14 @@ function has_children(){
     return count($pages);
 }
 
+
+
+
+function learning_setup(){
+    //add feature image support 
+    add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme', 'learning_setup');
+
 ?>
