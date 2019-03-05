@@ -5,13 +5,6 @@ function learning_resources() {
 }
 
 add_action('wp_enqueue_scripts', 'learning_resources');
-
-//nav menus
-
-register_nav_menus(array(
-    'primary' => __('Primary Menu'),
-    'footer' => __('Footer Menu')
-    ));
     
 //get top ancestor
 
@@ -42,6 +35,19 @@ function has_children(){
 function learning_setup(){
     //add feature image support 
     add_theme_support('post-thumbnails');
+    
+    //nav menus
+    register_nav_menus(array(
+        'primary' => __('Primary Menu'),
+        'footer' => __('Footer Menu')
+        ));
+        
+    //add post format support
+    add_theme_support('post-formats', array(
+        'aside',
+        'gallery',
+        'link'
+        ));
 }
 
 add_action('after_setup_theme', 'learning_setup');
