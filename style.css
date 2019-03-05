@@ -9,5 +9,8 @@
     border: solid black 1px;
 }
 
-/* header navigation */
-
+.post-aside {
+    font-size: 20px;
+    background: black;
+    color: white;
+}
